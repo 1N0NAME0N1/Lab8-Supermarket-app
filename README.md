@@ -1,24 +1,24 @@
-# 🛒 Supermarket Inventory Management System
+# Supermarket Inventory Management System
 > Node.js + Express + MySQL + EJS (MVC Architecture)
 
 ## โครงสร้างโปรเจกต์
 ```
 supermarket-app/
-├── controllers/
-│   └── productController.js   ← Logic ทั้งหมด (CRUD)
-├── models/
-│   └── productModel.js        ← SQL queries
-├── routes/
-│   └── productRoutes.js       ← Route + Multer config
-├── public/
-│   └── uploads/               ← รูปภาพสินค้า
-├── views/
-│   ├── index.ejs              ← Dashboard
-│   └── form.ejs               ← Add/Edit form
-├── app.js                     ← Entry point
-├── package.json
-├── supermarket_db.sql         ← SQL setup
-└── README.md
+- controllers/
+  - productController.js   <- Logic ทั้งหมด
+- models/
+  - productModel.js        <- SQL queries
+- routes/
+  - productRoutes.js       <- Route + Multer config
+- public/
+  - uploads/               <- รูปภาพสินค้า
+- views/
+  - index.ejs              <- Dashboard
+  - form.ejs               <- Add/Edit form
+- app.js                   <- Entry point
+- package.json
+- supermarket_db.sql       <- SQL setup
+- README.md
 ```
 
 ## ขั้นตอนการติดตั้ง
@@ -38,7 +38,7 @@ npm install
 mysql -u root -p < supermarket_db.sql
 ```
 
-### 4. ตั้งค่า environment (ถ้าต้องการ)
+### 4. ตั้งค่า environment
 สร้างไฟล์ `.env` หรือแก้ค่าใน `models/productModel.js`:
 ```
 DB_HOST=localhost
@@ -52,7 +52,7 @@ DB_NAME=supermarket_db
 # Production
 npm start
 
-# Development (auto-reload)
+# Development
 npm run dev
 ```
 
