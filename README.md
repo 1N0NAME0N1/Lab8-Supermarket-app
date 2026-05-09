@@ -23,7 +23,7 @@ supermarket-app/
 
 ## ขั้นตอนการติดตั้ง
 
-### 1. Clone หรือ Download โปรเจกต์
+### 1. Download โปรเจกต์
 ```bash
 cd supermarket-app
 ```
